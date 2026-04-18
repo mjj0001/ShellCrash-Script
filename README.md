@@ -4,10 +4,26 @@
 
 ## 安装方法
 
-在您的终端（支持 Bash 的环境）中复制并运行以下命令：
-
+### 1. 官方链接（推荐）
 ```bash
 export url='https://raw.githubusercontent.com/mjj0001/ShellCrash-Script/main' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh && bash /tmp/install.sh && source /etc/profile
+```
+
+### 2. 国内加速镜像（适合无法访问 GitHub 的环境）
+
+**使用 jsDelivr 镜像：**
+```bash
+export url='https://cdn.jsdelivr.net/gh/mjj0001/ShellCrash-Script@main' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh && bash /tmp/install.sh && source /etc/profile
+```
+
+**使用 Fastly 镜像：**
+```bash
+export url='https://fastly.jsdelivr.net/gh/mjj0001/ShellCrash-Script@main' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh && bash /tmp/install.sh && source /etc/profile
+```
+
+**使用 GHProxy 代理：**
+```bash
+export url='https://ghproxy.net/https://raw.githubusercontent.com/mjj0001/ShellCrash-Script/main' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh && bash /tmp/install.sh && source /etc/profile
 ```
 
 ## 说明
